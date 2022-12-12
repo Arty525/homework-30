@@ -41,8 +41,7 @@ int main() {
 	}
 
 	else if (argName == "post") {
-		r = cpr::Post(cpr::Url("http://httpbin.org/post"),
-			cpr::Payload{arg(post)});
+		r = cpr::Post(cpr::Url("http://httpbin.org/post"), cpr::Payload{arg(post)});
 	}
 
 	std::cout << r.text << std::endl;
